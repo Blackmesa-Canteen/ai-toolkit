@@ -3,13 +3,78 @@
   "app_version": "0.102.0",
   "default_parent_name": "AI Inbox",
   "default_note_type": "text",
-  "knowledge_base_root": "auto",
-  "categories": {
-    "languages": "auto",
-    "architecture": "auto",
-    "debugging": "auto",
-    "tools": "auto",
-    "snippets": "auto",
-    "projects": "auto"
+  "domains": {
+    "engineering": {
+      "noteId": "auto",
+      "title": "Engineering Knowledge Base",
+      "icon": "bx bx-brain",
+      "description": "Software engineering, code, architecture, tools.",
+      "categories": {
+        "languages": {
+          "noteId": "auto",
+          "title": "Languages & Frameworks",
+          "icon": "bx bx-code-alt",
+          "description": "TypeScript, Angular, Python, JavaScript, CSS, HTML, and framework-specific notes."
+        },
+        "architecture": {
+          "noteId": "auto",
+          "title": "Architecture & Patterns",
+          "icon": "bx bx-sitemap",
+          "description": "Design patterns, ADRs, system design, API design, data modeling."
+        },
+        "debugging": {
+          "noteId": "auto",
+          "title": "Debugging & Troubleshooting",
+          "icon": "bx bx-bug",
+          "description": "Bug investigations, root cause analyses, error resolutions."
+        },
+        "tools": {
+          "noteId": "auto",
+          "title": "Tools & DevOps",
+          "icon": "bx bx-wrench",
+          "description": "Git, Docker, CI/CD, AWS, Terraform, CLI tools."
+        },
+        "snippets": {
+          "noteId": "auto",
+          "title": "Code Snippets",
+          "icon": "bx bx-code-block",
+          "description": "Reusable code patterns, one-liners, utility functions."
+        },
+        "projects": {
+          "noteId": "auto",
+          "title": "Projects",
+          "icon": "bx bx-folder-open",
+          "description": "Per-project notes and documentation."
+        },
+        "geospatial": {
+          "noteId": "auto",
+          "title": "Geospatial & GIS",
+          "icon": "bx bx-map-alt",
+          "description": "GIS concepts, mapping technologies, coordinate systems, tile servers, COG, GDAL."
+        }
+      }
+    }
+  },
+  "note_types": {
+    "til": {
+      "icon": "bx bx-bulb",
+      "description": "Today I Learned — quick insight with context and takeaway."
+    },
+    "debug": {
+      "icon": "bx bx-bug",
+      "description": "Debug log — problem with root cause and fix."
+    },
+    "adr": {
+      "icon": "bx bx-sitemap",
+      "description": "Architecture Decision Record."
+    },
+    "snippet": {
+      "icon": "bx bx-code-block",
+      "description": "Reusable code with description and usage."
+    },
+    "research": {
+      "icon": "bx bx-search-alt",
+      "description": "Research/deep dive with findings and references."
+    }
   }
 }

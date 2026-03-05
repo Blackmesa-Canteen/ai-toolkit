@@ -28,6 +28,7 @@ TOPIC=""
 ARCHETYPE=""
 PROJECT=""
 ICON=""
+DOMAIN=""
 CLONE_TO_DAY=false
 NO_RELATIONS=false
 RELATIONS=""
@@ -45,6 +46,7 @@ while [[ $# -gt 0 ]]; do
     --note-type)    ARCHETYPE="$2"; shift 2 ;;
     --project)      PROJECT="$2"; shift 2 ;;
     --icon)         ICON="$2"; shift 2 ;;
+    --domain)       DOMAIN="$2"; shift 2 ;;
     --clone-to-day) CLONE_TO_DAY=true; shift ;;
     --no-relations) NO_RELATIONS=true; shift ;;
     --relations)    RELATIONS="$2"; shift 2 ;;
@@ -80,6 +82,7 @@ if [[ -n "$CATEGORY" ]]; then
   # New path: create-with-clone
   CMD_ARGS=(create-with-clone --config "$CONFIG" --title "$TITLE" --content - --type "$NOTE_TYPE" --category "$CATEGORY")
 
+  [[ -n "$DOMAIN" ]] && CMD_ARGS+=(--domain "$DOMAIN")
   [[ -n "$TOPIC" ]] && CMD_ARGS+=(--topic "$TOPIC")
   [[ -n "$ARCHETYPE" ]] && CMD_ARGS+=(--note-type "$ARCHETYPE")
   [[ -n "$PROJECT" ]] && CMD_ARGS+=(--project "$PROJECT")
