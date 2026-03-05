@@ -1,0 +1,15 @@
+{
+  "server_url": "https://your-trilium-server.example.com",
+  "app_version": "0.102.0",
+  "default_parent_name": "AI Inbox",
+  "default_note_type": "text",
+  "knowledge_base_root": "auto",
+  "categories": {
+    "languages": "auto",
+    "architecture": "auto",
+    "debugging": "auto",
+    "tools": "auto",
+    "snippets": "auto",
+    "projects": "auto"
+  }
+}
