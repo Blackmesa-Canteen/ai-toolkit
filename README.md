@@ -17,6 +17,10 @@ A collection of skills, connectors, plugins, and MCP servers for AI coding assis
 
 Push notes, knowledge snippets, code references, and research findings to a self-hosted [Trilium Notes](https://github.com/zadam/trilium) server via ETAPI. Organizes content into a structured knowledge base with topic hierarchy, calendar integration, note archetypes, and rich labels.
 
+### [trilium-content](skills/trilium-content/)
+
+Generate rich visual content for TriliumNext notes — Mermaid diagrams, Canvas (Excalidraw) drawings, Mind Maps, Relation Maps, and Geo Maps. Works as a companion to the `trilium-notes` skill, triggered when content is better represented visually.
+
 ### [apple-keychain](skills/apple-keychain/)
 
 Securely store and retrieve secrets (API tokens, passwords, credentials) using the macOS Keychain. Designed to be called by other skills that need secret management.
@@ -36,6 +40,7 @@ git clone https://github.com/<your-username>/ai-toolkit.git ~/projects/ai-toolki
 
 # Symlink skills into Claude Code
 ln -s ~/projects/ai-toolkit/skills/trilium-notes ~/.claude/skills/trilium-notes
+ln -s ~/projects/ai-toolkit/skills/trilium-content ~/.claude/skills/trilium-content
 ln -s ~/projects/ai-toolkit/skills/apple-keychain ~/.claude/skills/apple-keychain
 ```
 
